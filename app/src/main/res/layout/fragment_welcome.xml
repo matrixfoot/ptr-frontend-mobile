@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context=".WelcomeFragment">
+
+    <TextView
+        android:id="@+id/message"
+        android:layout_width="291dp"
+        android:layout_height="94dp"
+        android:layout_margin="60dp"
+        android:padding="30dp"
+        android:text="connectez vous/inscrivez-vous" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        tools:context=".WelcomeFragment">
+
+        <Button
+            android:id="@+id/buttonlogin"
+            android:layout_width="157dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="s'inscrire" />
+
+
+
+        <Button
+            android:id="@+id/buttonsignup"
+            android:layout_width="157dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="se connecter" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:minHeight="48dp"
+        android:layout_margin="10dp"
+        android:inputType="textEmailAddress"
+        android:hint="Renseigner votre email" />
+
+    <EditText
+        android:id="@+id/editTextTextPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:layout_margin="10dp"
+        android:hint="Renseigner votre mot de passe"
+        android:inputType="textPassword" />
+
+</LinearLayout>
