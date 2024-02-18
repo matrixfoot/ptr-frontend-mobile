@@ -7,4 +7,14 @@
     <string name="s_inscrire">s\'inscrire</string>
     <string name="renseigner_votre_email">Renseigner votre email</string>
     <string name="renseigner_votre_mot_de_passe">Renseigner votre mot de passe</string>
+    <string name="importicon">Import</string>
+    <string name="gallery">Gallery</string>
+    <string name="slideshow">Slideshow</string>
+    <string name="tools">Tools</string>
+    <string name="communicate">Communicate</string>
+    <string name="share">Share</string>
+    <string name="send">Send</string>
+    <string name="todo">TODO</string>
+    <string name="velmm">Velmm</string>
+    <string name="visit_velmm_com">Visit : Velmm.com</string>
 </resources>
