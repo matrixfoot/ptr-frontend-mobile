@@ -2,4 +2,9 @@
     <string name="app_name">Gestion-reclamations</string>
 <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="connectez_vous_inscrivez_vous">connectez vous/inscrivez-vous</string>
+    <string name="se_connecter">se connecter</string>
+    <string name="s_inscrire">s\'inscrire</string>
+    <string name="renseigner_votre_email">Renseigner votre email</string>
+    <string name="renseigner_votre_mot_de_passe">Renseigner votre mot de passe</string>
 </resources>
