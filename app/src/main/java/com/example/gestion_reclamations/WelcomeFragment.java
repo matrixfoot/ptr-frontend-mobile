@@ -4,6 +4,9 @@ import android.os.Bundle;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
+
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -19,8 +22,7 @@ import com.example.gestion_reclamations.databinding.FragmentWelcomeBinding;
 public class WelcomeFragment extends Fragment {
 private FragmentWelcomeBinding binding;
     public static WelcomeFragment newInstance() {
-        WelcomeFragment fragment = new WelcomeFragment();
-        return fragment;
+        return new WelcomeFragment();
     }
 
     @Override
@@ -39,10 +41,30 @@ private FragmentWelcomeBinding binding;
     public void onViewCreated(@NonNull View view,  Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         binding.buttonlogin.setEnabled(false);
-        binding.buttonsignup.setEnabled(false);
-        binding.email.setEnabled(false);
+        binding.buttonsignup.setEnabled(true);
+        binding.email.setEnabled(true);
         binding.editTextTextPassword.setEnabled(false);
+        binding.email.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
 
+            }
 
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+                binding.buttonlogin.setEnabled(!s.toString().isEmpty());
+                binding.editTextTextPassword.setEnabled(!s.toString().isEmpty());
+
+            }
+
+        });
+        binding.email.setOnClickListener(v -> {
+            // The user just clicked
+        });
     }
 }

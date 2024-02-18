@@ -13,7 +13,7 @@
         android:layout_height="94dp"
         android:layout_margin="60dp"
         android:padding="30dp"
-        android:text="connectez vous/inscrivez-vous" />
+        android:text="@string/connectez_vous_inscrivez_vous" />
 
 
     <LinearLayout
@@ -28,7 +28,8 @@
             android:layout_width="157dp"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:text="s'inscrire" />
+            android:text="@string/se_connecter"
+            style="?android:attr/buttonBarButtonStyle" />
 
 
 
@@ -37,7 +38,8 @@
             android:layout_width="157dp"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:text="se connecter" />
+            android:text="@string/s_inscrire"
+            style="?android:attr/buttonBarButtonStyle" />
     </LinearLayout>
 
     <EditText
@@ -49,7 +51,8 @@
         android:minHeight="48dp"
         android:layout_margin="10dp"
         android:inputType="textEmailAddress"
-        android:hint="Renseigner votre email" />
+        android:hint="@string/renseigner_votre_email"
+        android:autofillHints="" />
 
     <EditText
         android:id="@+id/editTextTextPassword"
@@ -57,7 +60,8 @@
         android:layout_height="wrap_content"
         android:minHeight="48dp"
         android:layout_margin="10dp"
-        android:hint="Renseigner votre mot de passe"
-        android:inputType="textPassword" />
+        android:hint="@string/renseigner_votre_mot_de_passe"
+        android:inputType="textPassword"
+        android:autofillHints="" />
 
 </LinearLayout>
