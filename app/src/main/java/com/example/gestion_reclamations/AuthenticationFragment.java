@@ -15,14 +15,16 @@ import com.example.gestion_reclamations.databinding.FragmentWelcomeBinding;
 
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link WelcomeFragment#newInstance} factory method to
+ * Use the {@link HomeActivity#newInstance} factory method to
  * create an instance of this fragment.
  *
  */
-public class WelcomeFragment extends Fragment {
-private FragmentWelcomeBinding binding;
-    public static WelcomeFragment newInstance() {
-        return new WelcomeFragment();
+
+public class AuthenticationFragment extends Fragment {
+
+    private FragmentWelcomeBinding binding;
+    public static HomeActivity newInstance() {
+        return new HomeActivity();
     }
 
     @Override

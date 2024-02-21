@@ -1,6 +1,5 @@
 package com.example.gestion_reclamations;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
@@ -14,7 +13,6 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
-import com.example.gestion_reclamations.databinding.ActivityMainBinding;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.navigation.NavigationView;
 import com.google.android.material.snackbar.Snackbar;
@@ -48,7 +46,7 @@ private ActivityMainBinding binding;
         navigationView.setCheckedItem(R.id.nav_camera);
 
         FragmentManager fragmentManager = getSupportFragmentManager();
-        ImportFragment fragment = new ImportFragment();
+        AuthenticationFragment fragment = new AuthenticationFragment();
         fragmentManager.beginTransaction().replace(R.id.frameLayout, fragment).commit();
     }
 
@@ -93,7 +91,7 @@ private ActivityMainBinding binding;
         FragmentManager fragmentManager = getSupportFragmentManager();
 
         if (id == R.id.nav_camera) {
-            fragment = new ImportFragment();
+            fragment = new AuthenticationFragment();
         } else if (id == R.id.nav_gallery) {
             fragment = new GalleryFragment();
         } else if (id == R.id.nav_slideshow) {
