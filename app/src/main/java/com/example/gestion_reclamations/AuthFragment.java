@@ -11,20 +11,19 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.example.gestion_reclamations.databinding.FragmentWelcomeBinding;
+import com.example.gestion_reclamations.databinding.FragmentAuthBinding;
 
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link HomeActivity#newInstance} factory method to
+ * Use the {@link AuthFragment#newInstance} factory method to
  * create an instance of this fragment.
- *
  */
+public class AuthFragment extends Fragment {
 
-public class AuthenticationFragment extends Fragment {
 
-    private FragmentWelcomeBinding binding;
-    public static HomeActivity newInstance() {
-        return new HomeActivity();
+    private FragmentAuthBinding binding;
+    public static AuthFragment newInstance() {
+        return new AuthFragment();
     }
 
     @Override
@@ -36,7 +35,7 @@ public class AuthenticationFragment extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
     {
-        binding = FragmentWelcomeBinding.inflate(inflater, container, false);
+        binding = FragmentAuthBinding.inflate(inflater, container, false);
         return binding.getRoot();
     }
     @Override

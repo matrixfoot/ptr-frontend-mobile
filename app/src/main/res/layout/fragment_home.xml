@@ -1,0 +1,154 @@
+<!-- fragment_home.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/finance15">
+
+    <!-- Services Section -->
+    <LinearLayout
+        android:id="@+id/servicesSection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_marginTop="16dp">
+
+        <!-- Service 1 -->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/service1"
+            android:scaleType="centerCrop"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Service 2 -->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/service2"
+            android:scaleType="centerCrop"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Service 3 -->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/service3"
+            android:scaleType="centerCrop"
+            android:layout_marginBottom="16dp"/>
+
+    </LinearLayout>
+
+    <!-- Testimonies Slider -->
+    <RelativeLayout
+        android:id="@+id/testimoniesSection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/servicesSection"
+        android:layout_marginTop="16dp">
+
+        <!-- Testimonies Slider Placeholder (You can use a ViewPager or a RecyclerView) -->
+        <!-- For demonstration, using an ImageView as a placeholder -->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/testimonies_slider_placeholder"
+            android:scaleType="centerCrop"/>
+
+        <!-- Testimonies Slider Indicators (Optional) -->
+        <!-- Example: Using a LinearLayout for indicators -->
+        <LinearLayout
+            android:id="@+id/sliderIndicators"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true"
+            android:gravity="center">
+
+            <!-- Indicator Dots (These can be ImageViews or other views) -->
+            <View
+                android:id="@+id/indicator1"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/slider_indicator_inactive"/>
+
+            <View
+                android:id="@+id/indicator2"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/slider_indicator_inactive"/>
+
+            <View
+                android:id="@+id/indicator3"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/slider_indicator_inactive"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <!-- Contact Form Section -->
+    <RelativeLayout
+        android:id="@+id/contactSection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/testimoniesSection"
+        android:padding="16dp"
+        android:layout_marginTop="16dp">
+
+        <!-- Contact Form Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contact Us"
+            android:textSize="24sp"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"/>
+
+        <!-- Name EditText -->
+        <EditText
+            android:id="@+id/editTextName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/contactFormTitle"
+            android:hint="Your Name"
+            android:inputType="textPersonName"
+            android:layout_marginTop="16dp"/>
+
+        <!-- Email EditText -->
+        <EditText
+            android:id="@+id/editTextEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextName"
+            android:hint="Your Email"
+            android:inputType="textEmailAddress"
+            android:layout_marginTop="8dp"/>
+
+        <!-- Message EditText -->
+        <EditText
+            android:id="@+id/editTextMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextEmail"
+            android:hint="Your Message"
+            android:inputType="textMultiLine"
+            android:lines="4"
+            android:layout_marginTop="8dp"/>
+
+        <!-- Submit Button -->
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextMessage"
+            android:text="Submit"
+            android:layout_marginTop="16dp"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
