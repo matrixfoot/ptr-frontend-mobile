@@ -24,7 +24,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:name="com.example.gestion_reclamations.HomeActivity"
-                tools:layout="@layout/fragment_welcome" />
+                tools:layout="@layout/fragment_home" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </RelativeLayout>
     <include

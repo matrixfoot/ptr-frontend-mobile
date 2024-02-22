@@ -13,6 +13,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
+import com.example.gestion_reclamations.databinding.ActivityMainBinding;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.navigation.NavigationView;
 import com.google.android.material.snackbar.Snackbar;
@@ -46,7 +47,7 @@ private ActivityMainBinding binding;
         navigationView.setCheckedItem(R.id.nav_camera);
 
         FragmentManager fragmentManager = getSupportFragmentManager();
-        AuthenticationFragment fragment = new AuthenticationFragment();
+        AuthFragment fragment = new AuthFragment();
         fragmentManager.beginTransaction().replace(R.id.frameLayout, fragment).commit();
     }
 
@@ -91,7 +92,7 @@ private ActivityMainBinding binding;
         FragmentManager fragmentManager = getSupportFragmentManager();
 
         if (id == R.id.nav_camera) {
-            fragment = new AuthenticationFragment();
+            fragment = new AuthFragment();
         } else if (id == R.id.nav_gallery) {
             fragment = new GalleryFragment();
         } else if (id == R.id.nav_slideshow) {
