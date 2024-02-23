@@ -22,4 +22,6 @@
     <string name="action_settings">Paramêtrage</string>
     <string name="utilisateur_connecte">utilisateur connecté</string>
     <string name="deconnexion">Déconnexion</string>
+    <string name="bienvenue_parmi_nous">Bienvenue parmi nous!</string>
+    <string name="conseil">Conseil</string>
 </resources>

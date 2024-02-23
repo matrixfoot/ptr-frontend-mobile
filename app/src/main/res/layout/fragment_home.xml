@@ -1,187 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingStart="16dp"
-    android:paddingEnd="16dp">
+    android:background="@color/cardview_dark_background">
 
-    <!-- Header Section -->
+    <!-- App Logo -->
+    <ImageView
+        android:id="@+id/imageViewLogo"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="64dp" />
+
+    <!-- App Name -->
+    <TextView
+        android:id="@+id/textViewAppName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gestion des réclamations clients"
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        android:layout_below="@id/imageViewLogo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp" />
+
+    <!-- Features Section -->
     <LinearLayout
-        android:id="@+id/headerSection"
+        android:id="@+id/featuresSection"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:layout_marginTop="16dp">
-
-        <!-- App Logo -->
-        <ImageView
-            android:id="@+id/imageViewLogo"
-            android:layout_width="120dp"
-            android:layout_height="120dp"
-            android:src="@drawable/logo"
-            android:layout_gravity="center_horizontal"/>
-
-        <!-- Welcome Message -->
-        <TextView
-            android:id="@+id/textViewWelcome"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Welcome to Our Financial App"
-            android:textSize="20sp"
-            android:textColor="@android:color/black"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="16dp"/>
-    </LinearLayout>
-
-    <!-- Featured Services Section -->
-    <LinearLayout
-        android:id="@+id/featuredServicesSection"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_below="@id/headerSection"
+        android:padding="16dp"
+        android:layout_below="@id/textViewAppName"
         android:layout_marginTop="32dp">
 
-        <!-- Featured Service 1 -->
+        <!-- Feature 1 -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:padding="8dp"
-            android:background="@drawable/finance15"
             android:layout_marginBottom="16dp">
 
             <ImageView
                 android:layout_width="48dp"
                 android:layout_height="48dp"
                 android:src="@drawable/iconconseil"
-                android:layout_gravity="center_vertical"/>
+                android:contentDescription="Feature 1 Icon"
+                android:tint="@color/black" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Investment"
+                android:text="Conseil"
                 android:textSize="18sp"
-                android:textColor="@android:color/black"
+                android:textColor="@color/black"
                 android:layout_marginStart="16dp"
-                android:layout_gravity="center_vertical"/>
+                android:gravity="center_vertical" />
         </LinearLayout>
 
-        <!-- Featured Service 2 -->
+        <!-- Feature 2 -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:padding="8dp"
-            android:background="@drawable/iconconseil"
             android:layout_marginBottom="16dp">
 
             <ImageView
                 android:layout_width="48dp"
                 android:layout_height="48dp"
-                android:src="@drawable/iconconseil"
-                android:layout_gravity="center_vertical"/>
+                android:src="@drawable/money"
+                android:contentDescription="Feature 2 Icon"
+                android:tint="@color/black" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Savings"
+                android:text="Récupérer de l'argent"
                 android:textSize="18sp"
-                android:textColor="@android:color/black"
+                android:textColor="@color/black"
                 android:layout_marginStart="16dp"
-                android:layout_gravity="center_vertical"/>
+                android:gravity="center_vertical" />
         </LinearLayout>
 
-        <!-- Featured Service 3 -->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:padding="8dp"
-            android:background="@drawable/iconconseil"
-            android:layout_marginBottom="16dp">
-
-            <ImageView
-                android:layout_width="48dp"
-                android:layout_height="48dp"
-                android:src="@drawable/iconconseil"
-                android:layout_gravity="center_vertical"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Loans"
-                android:textSize="18sp"
-                android:textColor="@android:color/black"
-                android:layout_marginStart="16dp"
-                android:layout_gravity="center_vertical"/>
-        </LinearLayout>
     </LinearLayout>
 
-    <!-- Quick Access Section -->
+    <!-- Testimonials Section -->
     <LinearLayout
-        android:id="@+id/quickAccessSection"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_below="@id/featuredServicesSection"
-        android:layout_marginTop="32dp"
-        android:gravity="center">
-
-        <!-- Quick Access Button 1 -->
-        <Button
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Check Balance"
-            android:textColor="@android:color/white"
-            android:background="@color/black"
-            android:layout_marginEnd="8dp"/>
-
-        <!-- Quick Access Button 2 -->
-        <Button
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Transfer Funds"
-            android:textColor="@android:color/white"
-            android:background="@color/black"
-            android:layout_marginStart="8dp"/>
-    </LinearLayout>
-
-    <!-- Footer Section -->
-    <LinearLayout
-        android:id="@+id/footerSection"
+        android:id="@+id/testimonialsSection"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:layout_alignParentBottom="true"
-        android:gravity="center"
-        android:padding="16dp">
+        android:padding="16dp"
+        android:background="@color/white"
+        android:layout_below="@id/featuresSection"
+        android:layout_marginTop="32dp">
 
-        <!-- Company Info -->
+        <!-- Testimonial 1 -->
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="© 2024 Financial App Inc."
-            android:textSize="14sp"
-            android:textColor="@android:color/black"/>
+            android:text="Great app! It helped me a lot."
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="8dp"/>
 
+        <!-- Testimonial 2 -->
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Terms of Service | Privacy Policy"
-            android:textSize="12sp"
-            android:textColor="@android:color/darker_gray"
-            android:layout_marginTop="8dp"/>
+            android:text="Easy to use and very useful."
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="8dp"/>
 
-        <!-- Contact Info -->
+        <!-- Testimonial 3 -->
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Contact: info@financialapp.com"
-            android:textSize="12sp"
-            android:textColor="@android:color/darker_gray"
-            android:layout_marginTop="8dp"/>
+            android:text="Highly recommend this app!"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"/>
+
     </LinearLayout>
+
+    <!-- Download Button -->
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Initier réclamation"
+        android:textSize="18sp"
+        android:textColor="@android:color/white"
+        android:background="@color/black"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/testimonialsSection"
+        android:layout_marginTop="32dp"/>
+
+    <!-- Floating Action Button (FAB) -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabContact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/ic_message"
+        android:contentDescription="Contact FAB"
+        android:backgroundTint="@color/white"/>
 
 </RelativeLayout>

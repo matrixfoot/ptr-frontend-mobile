@@ -41,14 +41,14 @@ public class HomeFragment extends Fragment {
                 // Handle Submit button click here
                 // You can retrieve data from the EditText fields and perform actions
                 // For example:
-                EditText nameEditText = view.findViewById(R.id.editTextName);
+              /**  EditText nameEditText = view.findViewById(R.id.editTextName);
                 String name = nameEditText.getText().toString();
 
                 EditText emailEditText = view.findViewById(R.id.editTextEmail);
                 String email = emailEditText.getText().toString();
 
                 EditText messageEditText = view.findViewById(R.id.editTextMessage);
-                String message = messageEditText.getText().toString();
+                String message = messageEditText.getText().toString();**/
 
                 // Perform actions with the data (e.g., submit form data to server)
                 // Example:
